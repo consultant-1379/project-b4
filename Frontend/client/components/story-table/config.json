@@ -1,0 +1,10 @@
+{
+  "script":"story-table/StoryTable",
+  "id":"StoryTable",
+  "data": {},
+  "dependencies":{
+    "@eui/lit-component":"0.10.x",
+    "@eui/draggable": "0.10.x",
+    "@eui/layout": "0.10.x"
+  }
+}

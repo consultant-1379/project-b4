@@ -1,0 +1,18 @@
+{
+  "script":"create-board/CreateBoard",
+  "title":"Create Board",
+  "route":"create-board",
+  "localePath": "locale/",
+  "menu": {
+    "id": "Add Board",
+    "data": {
+      "path": "create-board"
+    }
+  },
+  "dependencies": {
+    "@eui/component":"0.10.x",
+    "@eui/lit-component":"0.10.x",
+    "@eui/app":"0.10.x"
+  },
+  "components": {}
+}

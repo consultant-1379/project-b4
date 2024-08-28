@@ -1,0 +1,25 @@
+{
+  "app": {
+    "options": {},
+    "menu": {
+      "data": [
+        {
+          "id": "Dashboard",
+          "label": "Dashboard",
+          "active": true,
+          "data": {
+            "path": "app-1"
+          }
+        },
+        {
+          "id": "Create Board",
+          "label": "Create Board",
+          "active": false,
+          "data": {
+            "path": "create-board"
+          }
+        }
+      ]
+    }
+  }
+}

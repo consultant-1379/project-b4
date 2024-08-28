@@ -1,0 +1,31 @@
+/* style goes here */
+:host{
+  display: block;
+}
+eui-draggable-v0-drop-area {
+  float: left;
+  width: 33.33%;
+}
+h3 {
+  float: left;
+  width: 27%;
+  text-align: center;
+}
+.backlog {
+  margin-right: 5%;
+}
+.sprint {
+  width: 20%;
+}
+
+.mad-card {
+  --card-color-background: #f45b5b;
+}
+
+.glad-card {
+  --card-color-background: #8cf679; 
+}
+
+.sad-card {
+  --card-color-background: #eef679; 
+}

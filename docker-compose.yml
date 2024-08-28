@@ -1,0 +1,45 @@
+version: '3.8'
+services: 
+  frontend:
+    build: ./Frontend
+    container_name: retro_frontend
+    restart: on-failure
+    ports: 
+      - 8000:8080
+    volumes: 
+      - ./Frontend:/home/retro_frontend
+      - /home/retro_frontend/node_modules
+    networks: 
+      - retro-network
+
+  backend:
+    build: ./Backend
+    container_name: retro_backend
+    restart: on-failure
+    volumes:
+      - ./Backend:/usr/retro_backend:rw
+    ports:
+      - 9000:8080
+    depends_on:
+      - database
+    networks:
+      - retro-network
+
+  database:
+    image: mysql:5.7
+    container_name: retro_database
+    restart: on-failure
+    ports:
+      - 3306:3306
+    networks:
+      - retro-network
+    environment:
+      MYSQL_DATABASE: 'retro_tool'
+      # So you don't have to use root, but you can if you like
+      MYSQL_USER: 'root'
+      # Password for root access
+      MYSQL_ROOT_PASSWORD: 'supersecret'
+
+networks:
+  retro-network:
+    driver: bridge

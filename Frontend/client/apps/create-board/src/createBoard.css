@@ -1,0 +1,35 @@
+:host{
+  display: block;
+} 
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+/* sample style */
+h1 {
+  padding: 1em;
+}
+
+.team-card {
+  width: 35%;
+  padding: 20px;
+  text-align: center;
+}
+.flex-display {
+  display: flex;
+}
+
+.float-right {
+  float:right
+}
+.float-left {
+  float:left;
+}
+.card-white-color {
+  --card-color-background: white;
+}
+
+.button-add-card {
+  --btn-primary-background: #24c9f2;
+}
